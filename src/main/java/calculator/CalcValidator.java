@@ -30,7 +30,7 @@ public class CalcValidator {
                 .replaceAll("^\\-{2}", "-") // Doesn't let to make two '-' at the beginning of string
 
                 // Removing mistakes
-                .replaceAll("[^0-9 *()+-.]| +", "") // Removes all non-valid character except numbers, point and spaces
+                .replaceAll("[^0-9 *()+-./]| +", "") // Removes all non-valid character except numbers, point and spaces
                 .replaceAll("\\-{3}", "-") // Doesn't let to make more than two minuses
                 .replaceAll("[,.]+", ".") // Makes from ',' to '.' and doesn't let to make more than one point
 
